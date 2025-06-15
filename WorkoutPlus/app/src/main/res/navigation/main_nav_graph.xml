@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/workoutPannelFragment">
+    <fragment
+        android:id="@+id/workoutPannelFragment"
+        android:name="com.example.workoutplus.ui.WorkoutPannelFragment"
+        android:label="fragment_workout_pannel"
+        tools:layout="@layout/fragment_workout_pannel" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.workoutplus.ui.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.workoutplus.ui.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+</navigation>
