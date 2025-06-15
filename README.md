@@ -1,2 +1,0 @@
-# WorkoutPlusApp
-App proyecto integrado
