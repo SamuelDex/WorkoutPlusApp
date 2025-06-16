@@ -47,7 +47,7 @@ class RegisterFragment : Fragment(), View.OnClickListener {
             val editor = prefs.edit()
             val gson = Gson()
             val json = gson.toJson(it)
-            editor.putString("user", json)
+            editor.putString("usuario", json)
             editor.apply()
 
             startActivity(Intent(requireContext(), NavigationActivity::class.java))

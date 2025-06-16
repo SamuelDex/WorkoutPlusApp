@@ -26,7 +26,7 @@ class SessionActivity : AppCompatActivity(), View.OnClickListener {
     private val CREATE_CODE = 201
     private lateinit var adapter: ExerciseAdapter
     private lateinit var exerciseToUpdate: ExerciseModel
-    private var session = SessionModel(null, null, null, null)
+    private var session = SessionModel(null, null, null, mutableListOf<ExerciseModel>())
     private var isUpdate = false
     private val exerciseLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         when(it.resultCode){

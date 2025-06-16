@@ -22,7 +22,7 @@ class WorkoutActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityWorkoutBinding
     private val workoutViewModel: WorkoutViewModel by viewModels()
-    private var workout = WorkoutModel(null, "", null, null, null, null, null, )
+    private var workout = WorkoutModel(null, "", null, null, null, null, mutableListOf<SessionModel>() )
     private var isUpdate = false
     private val UPDATE_CODE = 200
     private val CREATE_CODE = 201
